@@ -1,0 +1,81 @@
+body {
+    position: relative;
+}
+
+.divSearch {
+    background-color: #E0E0E0;
+    color: black;
+    padding: 30px;
+}
+
+.divSearch input {
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+
+}
+
+
+.buttonFilter {
+    height: 35px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #f18724;
+    color: #FFF;
+    position: absolute;
+    top: 240px;
+}
+
+.divSearch .adresseSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    text-align: center;
+    display: none;
+}
+
+.divSearch .adresseSection p{
+    text-align: left;
+    background-color: #f3f3f3;
+    padding: 5px;
+}
+
+.liChecked {
+    text-decoration: line-through;
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.divToDo #listToDo {
+    padding: 30px;
+}
+
+.divToDo #listToDo li{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    width: 399px;
+    height: 36px;
+}
+
+.divToDo #listToDo li:hover{
+    background-color: #E0E0E0;
+}
+.divToDo #listToDo .liChecked:hover {
+    text-decoration: line-through;
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.divToDo #listToDo li .close{
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+    left: 370px;
+}
+
+.divToDo #listToDo li .close:hover{
+    background-color: red;
+    cursor: pointer;
+}
