@@ -7,7 +7,7 @@ const divtoDo = createToDo();
 
     const buttonSearch = document.createElement('button');
     document.body.append(buttonSearch);
-    buttonSearch.innerText = "Filtrer"
+    buttonSearch.innerText = "Tous"
     buttonSearch.classList.add('buttonFilter');
     let filtre = true;
 
@@ -22,11 +22,13 @@ const divtoDo = createToDo();
             checked[i].style.display = "none";
         }
         filtre = !filtre;
+        buttonSearch.innerText = "Non check"
     } else {
         for (let i = 0; i < checked.length; i++) {
             checked[i].style.display = "block";
         }
         filtre = !filtre;
+        buttonSearch.innerText = "Tous"
     }
 
     
